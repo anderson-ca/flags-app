@@ -1,10 +1,19 @@
 import React from 'react';
-import './App.css';
+import { Switch, Route } from 'react-router-dom';
+import Nav from './components/Nav.js';
+import Flags from './components/Flags.js'
+import About from './components/About.js'
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <h2 id="flags-header">Flags Display</h2>
+      <Nav />
+      <Switch>
+        <Route exact path="/" />
+        <Route path="/about" component={About} />
+        <Route path="/flags" component={Flags} />
+      </Switch>
     </div>
   );
 }
