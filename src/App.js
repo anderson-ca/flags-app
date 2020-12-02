@@ -1,21 +1,11 @@
-import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-import Nav from './components/Nav.js';
-import Flags from './components/Flags.js'
-import About from './components/About.js'
-import "./App.css";
+import React from 'react'
 
 function App() {
-  return (
-    <div className="App">
-      <Nav />
-      <Switch>
-        <Route exact path="/" />
-        <Route path="/about" component={About} />
-        <Route path="/flags" component={Flags} />
-      </Switch>
-    </div>
-  );
+    return (
+        <div>
+            <h1>Hello fuckheads!!!!!</h1>
+        </div>
+    )
 }
 
-export default App;
+export default App
